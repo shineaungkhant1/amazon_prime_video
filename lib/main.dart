@@ -1,8 +1,4 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
-
-
 
 void main() {
   runApp(MaterialApp(
@@ -110,9 +106,12 @@ class AmazomPrimeHomePage extends StatelessWidget{
             ),
             SizedBox(height: 16),
             Container(
-              padding: EdgeInsets.symmetric(horizontal: 85),
-              color: Color.fromRGBO(12, 120, 175, 1.0),
+              width: double.infinity,
+
               child:TextButton(
+                style: TextButton.styleFrom(
+                  backgroundColor: Color.fromRGBO(12, 120, 175, 1.0)
+                ),
                 onPressed: () {
                   print("Create your Amazon account Button tap.");
                 },
@@ -143,16 +142,17 @@ class AmazomPrimeHomePage extends StatelessWidget{
               ),
             ),
             Container(
-              padding: EdgeInsets.symmetric(horizontal: 143),
-
-              color: Color.fromRGBO(65, 81, 101, 1.0),
+            width: double.infinity,
               child:TextButton(
+                style: TextButton.styleFrom(
+                    backgroundColor: Color.fromRGBO(65, 81, 101, 1.0)
+                ),
                 onPressed: () {
                   print("Sigin-in now Button tap.");
                 },
                 child: Text(
                   "Sigin-in now",
-                  style: TextStyle(color: Colors.white, fontSize: 16),
+                  style: TextStyle(color: Colors.white, fontSize: 15),
                 ),
               ),
             ),
